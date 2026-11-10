@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Аренда Электросамокатов</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_scooters">
+       <attribute name="title">
+        <string>Доступные самокаты</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_scooters">
+        <item>
+         <widget class="QTableWidget" name="table_scooters">
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Локация</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Тариф</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_map">
+          <property name="text">
+           <string>Интерактивная карта с самокатами</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_routes">
+       <attribute name="title">
+        <string>Маршруты</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_routes">
+        <item>
+         <widget class="QLabel" name="label_routes">
+          <property name="text">
+           <string>Популярные маршруты и рекомендации</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="list_routes"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_stats">
+       <attribute name="title">
+        <string>Статистика</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_stats">
+        <item>
+         <widget class="QLabel" name="label_stats">
+          <property name="text">
+           <string>Статистика аренды</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser_stats"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_reviews">
+       <attribute name="title">
+        <string>Отзывы</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_reviews">
+        <item>
+         <widget class="QTextEdit" name="textEdit_newReview">
+          <property name="placeholderText">
+           <string>Оставьте отзыв...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_submitReview">
+          <property name="text">
+           <string>Отправить отзыв</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="list_reviews"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_profile">
+       <attribute name="title">
+        <string>Профиль</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_profile">
+        <item>
+         <widget class="QLabel" name="label_userInfo">
+          <property name="text">
+           <string>Информация о пользователе</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_logout">
+          <property name="text">
+           <string>Выйти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
